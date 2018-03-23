@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="five.project.bookcam.bookcam">
+
+
+    <!-- Add permissions here -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/logo"
+        android:supportsRtl="true">
+
+        <activity
+            android:name=".mvc.controller.MainFragment"
+            android:label="首頁"
+            android:theme="@style/AppTheme">
+        </activity>
+        <activity
+            android:name=".mvc.controller.WelcomeActivity"
+            android:theme="@android:style/Theme.NoTitleBar">>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".mvc.controller.LoginActivity"
+            android:label="Login Page"
+            android:theme="@style/AppTheme">
+        </activity>
+
+        <activity
+            android:name=".mvc.controller.MainActivity"
+            android:label="註冊"
+            android:theme="@style/AppTheme">
+        </activity>
+
+
+
+    </application>
+
+</manifest>
